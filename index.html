@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Company Directory</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
     <h1>Company Directory</h1>
@@ -11,17 +12,28 @@
         <!-- User list will be populated here -->
     </ul>
 
+    <h2>Update Your Information</h2>
+    <form id="update-form">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="image">Image URL:</label><br>
+        <input type="text" id="image" name="image"><br>
+        <!-- Add more fields as needed... -->
+        <input type="submit" value="Update">
+    </form>
+
     <script>
         // This is just a placeholder. In a real application, you would fetch this data from your server.
         var users = [
-            { name: 'User 1', page: 'user1.html', image: 'Resources/user1.png' },
-            { name: 'User 2', page: 'user2.html', image: 'Resources/user2.png' },
-            { name: 'User 3', page: 'user3.html', image: 'Resources/user3.png' },
-            { name: 'User 4', page: 'user4.html', image: 'Resources/user4.png' },
-            { name: 'User 5', page: 'user5.html', image: 'Resources/user5.png' },
+            { name: 'User 1', page: 'user1.html', image: 'user1.jpg' },
+            { name: 'User 2', page: 'user2.html', image: 'user2.jpg' },
+            { name: 'User 3', page: 'user3.html', image: 'user3.jpg' },
+            { name: 'User 4', page: 'user4.html', image: 'user4.jpg' },
+            { name: 'User 5', page: 'user5.html', image: 'user5.jpg' },
         ];
 
         var userList = document.getElementById('user-list');
+        var updateForm = $('#update-form');
 
         users.forEach(function(user) {
             var listItem = document.createElement('li');
@@ -35,6 +47,27 @@
             listItem.appendChild(img);
             listItem.appendChild(link);
             userList.appendChild(listItem);
+        });
+
+        updateForm.on('submit', function(e) {
+            e.preventDefault();
+
+            var formData = $(this).serialize();
+
+            $.ajax({
+                type: 'POST',
+                url: '/submit-form',
+                data: formData,
+                success: function(response) {
+                    // Handle success...
+                    alert('Information updated successfully!');
+                },
+                error: function(error) {
+                    // Handle error...
+                    console.log(error);
+                    alert('An error occurred.');
+                }
+            });
         });
     </script>
 </body>
