@@ -16,14 +16,14 @@ function sendEmail(formData) {
     let transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-            user: 'your-email@gmail.com',
-            pass: 'your-password'
+            user: 'elcgeyer2000@gmail.com',
+            pass: 'Zeppelin2015!@'
         }
     });
 
     let mailOptions = {
-        from: 'your-email@gmail.com',
-        to: 'recipient-email@gmail.com',
+        from: 'elcgeyer2000@gmail.com',
+        to: 'elcgeyer2000@gmail.com',
         subject: 'Form Submission',
         text: JSON.stringify(formData, null, 2)
     };
