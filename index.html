@@ -23,6 +23,14 @@
             justify-content: center; /* Center content horizontally */
             align-items: center; /* Center content vertically */
         }
+
+        /* Make the user list display horizontally */
+        #user-list {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            padding-top: 60px; /* Add padding to the top to avoid overlap with the banner */
+        }
     </style>
 </head>
 <body>
@@ -49,7 +57,7 @@
     </form>
 
     <script>
-        
+        // This is just a placeholder. In a real application, you would fetch this data from your server.
         var users = [
             { name: 'User 1', page: 'user1.html', image: 'Resources/user1.png' },
             { name: 'User 2', page: 'user2.html', image: 'Resources/user2.png' },
