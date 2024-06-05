@@ -11,4 +11,7 @@ body {
     height: 50px; /* Set the height of the banner */
     position: fixed; /* Fix the position of the banner */
     top: 0; /* Position the banner at the top of the page */
+    display: flex; /* Use flexbox for easy centering */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
 }
