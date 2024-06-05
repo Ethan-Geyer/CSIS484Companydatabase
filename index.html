@@ -5,9 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Company Directory</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        /* Set the background color to light gray */
+        body {
+            background-color: lightgray;
+            color: black; /* Set the text color to black */
+        }
+
+        /* Add a light blue banner at the top of the page */
+        .banner {
+            background-color: lightblue;
+            width: 100%; /* Make the banner span the full width of the page */
+            height: 50px; /* Set the height of the banner */
+            position: fixed; /* Fix the position of the banner */
+            top: 0; /* Position the banner at the top of the page */
+            display: flex; /* Use flexbox for easy centering */
+            justify-content: center; /* Center content horizontally */
+            align-items: center; /* Center content vertically */
+        }
+    </style>
 </head>
 <body>
-    <h1>Company Directory</h1>
+    <div class="banner">
+        <h1>Company Directory</h1>
+    </div>
     <ul id="user-list">
         <!-- User list will be populated here -->
     </ul>
@@ -28,7 +49,7 @@
     </form>
 
     <script>
-        // This is just a placeholder. In a real application, you would fetch this data from your server.
+        
         var users = [
             { name: 'User 1', page: 'user1.html', image: 'Resources/user1.png' },
             { name: 'User 2', page: 'user2.html', image: 'Resources/user2.png' },
@@ -77,4 +98,3 @@
     </script>
 </body>
 </html>
-
