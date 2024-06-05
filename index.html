@@ -31,6 +31,12 @@
             justify-content: space-around;
             padding-top: 60px; /* Add padding to the top to avoid overlap with the banner */
         }
+
+        /* Center the form and add some space at the top */
+        #update-form {
+            width: 50%; /* Set the width of the form */
+            margin: 100px auto; /* Add space at the top and center the form horizontally */
+        }
     </style>
 </head>
 <body>
@@ -40,6 +46,9 @@
     <ul id="user-list">
         <!-- User list will be populated here -->
     </ul>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod ultrices massa, et pharetra justo fermentum nec. Aliquam erat volutpat.</p>
+    <p>Curabitur non diam sit amet felis luctus suscipit. Quisque vitae justo nec lacus pretium aliquet non a enim. Sed vitae mi a mi pretium aliquet ac sed elitos.</p>
 
     <h2>Update Your Information</h2>
     <form id="update-form">
@@ -57,7 +66,7 @@
     </form>
 
     <script>
-        // This is just a placeholder. In a real application, you would fetch this data from your server.
+     
         var users = [
             { name: 'User 1', page: 'user1.html', image: 'Resources/user1.png' },
             { name: 'User 2', page: 'user2.html', image: 'Resources/user2.png' },
@@ -106,3 +115,4 @@
     </script>
 </body>
 </html>
+
