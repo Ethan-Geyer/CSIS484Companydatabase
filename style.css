@@ -1,5 +1,14 @@
-/* Add this to your existing stylesheet */
+/* Set the background color to light gray */
 body {
-    background-color: #ffffff; /* White background */
-    color: #000000; /* Black text */
+    background-color: lightgray;
+    color: black; /* Set the text color to black */
+}
+
+/* Add a light blue banner at the top of the page */
+.banner {
+    background-color: lightblue;
+    width: 100%; /* Make the banner span the full width of the page */
+    height: 50px; /* Set the height of the banner */
+    position: fixed; /* Fix the position of the banner */
+    top: 0; /* Position the banner at the top of the page */
 }
