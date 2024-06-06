@@ -24,11 +24,12 @@
             align-items: center; /* Center content vertically */
         }
 
-        /* Make the user list display horizontally */
+        /* Make the user list display in two rows */
         #user-list {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 10px;
             padding-top: 60px; /* Add padding to the top to avoid overlap with the banner */
         }
 
