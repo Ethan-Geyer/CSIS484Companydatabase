@@ -26,11 +26,11 @@ p {
     font-family: 'Roboto Slab', serif;
 }
 
-/* Make the user list display in two rows */
-#user-list {
+
+/* Make the user list display in a grid */
+#user-list-1, #user-list-2 {
     display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-auto-rows: auto;
+    grid-template-columns: repeat(5, 1fr); /* Create five columns */
     gap: 10px;
     padding-top: 60px; /* Add padding to the top to avoid overlap with the banner */
 }
