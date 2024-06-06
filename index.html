@@ -12,8 +12,11 @@
     <div class="banner">
         <h1>Company Directory</h1>
     </div>
-    <ul id="user-list">
-        <!-- User list will be populated here -->
+    <ul id="user-list-1">
+        <!-- Users 1-10 will be populated here -->
+    </ul>
+    <ul id="user-list-2">
+        <!-- Users 11-20 will be populated here -->
     </ul>
 
     <p>Select the user you want to view from above. You will be taken to their page, where you can find their contact info, department, job title, and more! </p>
@@ -61,10 +64,11 @@
             { name: 'User 20', page: 'user5.html', image: 'Resources/user5.png' },
         ];
 
-        var userList = document.getElementById('user-list');
+        var userList1 = document.getElementById('user-list-1');
+        var userList2 = document.getElementById('user-list-2');
         var updateForm = $('#update-form');
 
-        users.forEach(function(user) {
+        users.forEach(function(user, index) {
             var listItem = document.createElement('li');
             var link = document.createElement('a');
             var img = document.createElement('img');
@@ -75,7 +79,11 @@
             link.href = user.page;
             listItem.appendChild(img);
             listItem.appendChild(link);
-            userList.appendChild(listItem);
+            if (index < 10) {
+                userList1.appendChild(listItem);
+            } else {
+                userList2.appendChild(listItem);
+            }
         });
 
         updateForm.on('submit', function(e) {
