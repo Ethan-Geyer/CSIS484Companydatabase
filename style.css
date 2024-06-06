@@ -1,7 +1,11 @@
-/* Set the background color to light gray */
+/* Import the Roboto, Roboto Condensed, and Roboto Slab fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Roboto+Condensed:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap');
+
+/* Set the background color to a gradient from blue to green */
 body {
-    background-color: lightgray;
+    background: linear-gradient(to bottom, blue, green);
     color: black; /* Set the text color to black */
+    font-family: 'Roboto', sans-serif; /* Use the Roboto font */
 }
 
 /* Add a light blue banner at the top of the page */
@@ -14,4 +18,10 @@ body {
     display: flex; /* Use flexbox for easy centering */
     justify-content: center; /* Center content horizontally */
     align-items: center; /* Center content vertically */
+    font-family: 'Roboto Condensed', sans-serif; /* Use the Roboto Condensed font */
+}
+
+/* Use the Roboto Slab font for paragraphs */
+p {
+    font-family: 'Roboto Slab', serif;
 }
