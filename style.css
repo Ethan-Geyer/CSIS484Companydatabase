@@ -4,7 +4,7 @@
 /* Set the background color to a gradient from dark green to light green */
 body {
     background: linear-gradient(to bottom, darkgreen, lightgreen);
-    color: black; /* Set the text color to black */
+    color: white; /* Set the text color to black */
     font-family: 'Roboto', sans-serif; /* Use the Roboto font */
 }
 
@@ -19,6 +19,7 @@ body {
     justify-content: center; /* Center content horizontally */
     align-items: center; /* Center content vertically */
     font-family: 'Roboto Condensed', sans-serif; /* Use the Roboto Condensed font */
+    color: white; /* Set the color of the text to white */
 }
 
 /* Use the Roboto Slab font for paragraphs */
