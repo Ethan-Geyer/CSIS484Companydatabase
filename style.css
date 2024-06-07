@@ -1,16 +1,16 @@
 /* Import the Roboto, Roboto Condensed, and Roboto Slab fonts from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Roboto+Condensed:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap');
 
-/* Set the background color to a gradient from blue to green */
+/* Set the background color to orange */
 body {
-    background: linear-gradient(to bottom, blue, green);
+    background: orange;
     color: black; /* Set the text color to black */
     font-family: 'Roboto', sans-serif; /* Use the Roboto font */
 }
 
-/* Add a light blue banner at the top of the page */
+/* Add a dark orange banner at the top of the page */
 .banner {
-    background-color: lightblue;
+    background-color: darkorange;
     width: 100%; /* Make the banner span the full width of the page */
     height: 50px; /* Set the height of the banner */
     position: fixed; /* Fix the position of the banner */
@@ -25,7 +25,6 @@ body {
 p {
     font-family: 'Roboto Slab', serif;
 }
-
 
 /* Make the user list display in a grid */
 #user-list-1, #user-list-2 {
