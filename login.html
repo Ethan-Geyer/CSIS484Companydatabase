@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        /* Your CSS styles here */
+    </style>
+</head>
+<body>
+
+<div class="login-container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" id="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" id="psw" required>
+
+    <button type="submit" id="login">Login</button>
+</div>
+
+<script>
+$(document).ready(function(){
+  $("#login").click(function(){
+    var username = $("#uname").val();
+    var password = $("#psw").val();
+    // Perform your login logic here.
+    // For example, you could send a request to your server to log the user in.
+    // If the login is successful, redirect to index.html
+    if(username === "Admin" && password === "Password") {
+        window.location.href = "index.html";
+    } else {
+        alert("Username: " + username + "\nPassword: " + password);
+    }
+  });
+});
+</script>
+
+</body>
+</html>
