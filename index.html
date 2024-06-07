@@ -31,10 +31,9 @@ $(document).ready(function(){
     var username = $("#uname").val();
     var password = $("#psw").val();
     // Perform your login logic here.
-    // For example, you could send a request to your server to log the user in.
-    // If the login is successful, redirect to index.html
+  
     if(username === "Admin" && password === "Password") {
-        window.location.href = "index.html";
+        window.location.href = "dir.html";
     } else {
         alert("Username: " + username + "\nPassword: " + password);
     }
