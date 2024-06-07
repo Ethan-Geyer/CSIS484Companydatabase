@@ -2,12 +2,12 @@
 <html>
 <head>
     <title>Login Page</title>
+    <link rel="stylesheet" type="text/css" href="stylez.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <style>
-        /* Your CSS styles here */
-    </style>
 </head>
 <body>
+
+<img id="logo" src="logo.png" alt="Logo">
 
 <div class="login-container">
     <label for="uname"><b>Username</b></label>
@@ -19,22 +19,17 @@
     <button type="submit" id="login">Login</button>
 </div>
 
+<div id="footer">
+    <p>This is a small paragraph at the bottom of the screen.</p>
+    <img src="footer-image.png" alt="Footer Image">
+</div>
+
 <script>
-$(document).ready(function(){
-  $("#login").click(function(){
-    var username = $("#uname").val();
-    var password = $("#psw").val();
-    // Perform your login logic here.
-    // For example, you could send a request to your server to log the user in.
-    // If the login is successful, redirect to index.html
-    if(username === "Admin" && password === "Password") {
-        window.location.href = "index.html";
-    } else {
-        alert("Username: " + username + "\nPassword: " + password);
-    }
-  });
-});
+    /* Your JavaScript here */
 </script>
+
+</body>
+</html>
 
 </body>
 </html>
