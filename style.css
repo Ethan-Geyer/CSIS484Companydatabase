@@ -1,16 +1,16 @@
 /* Import the Roboto, Roboto Condensed, and Roboto Slab fonts from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Roboto+Condensed:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap');
 
-/* Set the background color to orange */
+/* Set the background color to a gradient from dark green to light green */
 body {
-    background: orange;
+    background: linear-gradient(to bottom, darkgreen, lightgreen);
     color: black; /* Set the text color to black */
     font-family: 'Roboto', sans-serif; /* Use the Roboto font */
 }
 
-/* Add a dark orange banner at the top of the page */
+/* Add a black banner at the top of the page */
 .banner {
-    background-color: darkorange;
+    background-color: black;
     width: 100%; /* Make the banner span the full width of the page */
     height: 50px; /* Set the height of the banner */
     position: fixed; /* Fix the position of the banner */
