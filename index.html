@@ -9,7 +9,6 @@
 
 <img id="logo" src="logo.png" alt="Logo" style="width:50px;height:50px;">
 
-
 <div class="login-container">
     <label for="uname"><b>Username</b></label>
     <input type="text" placeholder="Enter Username" id="uname" required>
@@ -23,8 +22,6 @@
 <div id="footer">
     <p>Welcome to the company Directory. </p>
     <h1>Welcome!</h1>
-
-    
 </div>
 
 <script>
@@ -32,12 +29,20 @@ $(document).ready(function(){
   $("#login").click(function(){
     var username = $("#uname").val();
     var password = $("#psw").val();
-    // Perform your login logic here.
-  
-    if(username === "Admin" && password === "Password") {
+
+    // Define your logins here.
+    var logins = {
+      "Admin": "Password",
+      "User1": "Password1",
+      "User2": "Password2"
+      // Add more logins as needed.
+    };
+
+    // Check if the entered username and password exist in the logins object.
+    if(logins[username] === password) {
         window.location.href = "dir.html";
     } else {
-        alert("Username: " + username + "\nPassword: " + password);
+        alert("Invalid username or password");
     }
   });
 });
@@ -45,6 +50,7 @@ $(document).ready(function(){
 
 </body>
 </html>
+
 
 </body>
 </html>
